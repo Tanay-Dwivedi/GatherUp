@@ -5,7 +5,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,7 +19,7 @@ public class OnBoarding extends AppCompatActivity {
     LinearLayout linearLayout;
     Button skip_button;
 
-    TextView [] dots;
+    TextView[] dots;
     ViewPagerAdapter viewPagerAdapter;
 
     @Override
@@ -53,7 +52,7 @@ public class OnBoarding extends AppCompatActivity {
         dots = new TextView[4];
         linearLayout.removeAllViews();
 
-        for(int i=0; i<dots.length; i++) {
+        for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText("⦿");
             dots[i].setTextSize(35);
@@ -81,9 +80,5 @@ public class OnBoarding extends AppCompatActivity {
 
         }
     };
-
-    private int getItem(int i) {
-        return viewPager.getCurrentItem() + i;
-    }
 
 }
