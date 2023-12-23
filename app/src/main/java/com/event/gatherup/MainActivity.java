@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import com.event.gatherup.OnBoardingFiles.OnBoarding;
+
 public class MainActivity extends AppCompatActivity {
 
     CardView get_started_cv;
